@@ -43,8 +43,7 @@ public class XandY {
 
         try {
             double slope = p1.calculateSlope(p2);
-            double roundedSlope = Math.round(slope * 100.0) / 100.0;
-            System.out.println("Slope: " + roundedSlope);
+            System.out.println("Slope: " + slope);
         } catch (ArithmeticException e) {
             System.out.println("Slope: " + e.getMessage());
         }
